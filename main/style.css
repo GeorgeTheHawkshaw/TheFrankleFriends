@@ -1,11 +1,12 @@
 body {
-  background-color: powderblue;
+  background-image: url("images/weet.jpg");
+  background-repeat: repeat;
 }
 h1 {
   color: blue;
 }
 p {
-  color: red;
+  color: white;
 }
 
 #center{
@@ -18,4 +19,11 @@ p {
 	transform: translate(-50%, -50%);
 	border: outset 3px #00f;
 	box-shadow: 2px 2px 3px #000;
+}
+#centertext{
+    text-align: center;
+    top: 500%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -90%);
 }
