@@ -1,15 +1,13 @@
+var img;
+function preload() {
+	img = loadImage('images/Whoops.png');
+}
 function setup() {
-  // put setup code here
-  createCanvas(windowWidth, windowHeight);
-  
+  // Top-left corner of the img is at (0, 0)
+  // Width and height are the img's original width and height
+  createCanvas(windowWidth,windowHeight);
 }
 
-function draw() {
-  // put drawing code here
-  if (mouseIsPressed) {
-    fill(0);
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX, mouseY, 80, 80);
+function draw(){
+	image(img,mouseX-250,mouseY-250);
 }
